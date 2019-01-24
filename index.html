@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+    <link href="css/reset.css" rel="stylesheet" type="text/css" />
+    <link href="css/index.css" rel="stylesheet" type="text/css" />
+    <title>下载37°社区</title>
+    <div></div>
+    <style>
+    </style>
+    <script>
+        (function (doc, win) {
+            var docEl = doc.documentElement,
+                resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
+                recalc = function () {
+                    var clientWidth = docEl.clientWidth;
+                    console.log(clientWidth)
+                    if (!clientWidth) return;
+                    docEl.style.fontSize = 50 * (clientWidth / 375) + 'px';
+                };
+            if (!doc.addEventListener) return;
+            win.addEventListener(resizeEvt, recalc, false);
+            doc.addEventListener('DOMContentLoaded', recalc, false);
+        })(document, window);
+    </script>
+</head>
+
+<body>
+
+    <div class="index-box">
+        <div class="opcity-box">
+            <div class="logo-wrapper">
+                <img src="imges/logo.png" alt="">
+            </div>
+            <div class="title-wrapper">
+                <p class="title-languger">37°社区</p>
+                <p class="title-languger">一个有温度的租房APP</p>
+            </div>
+            <div class="titleimage-wrapper">
+
+                <div class="waper-box">
+                    <div class="image-wrapper">
+                        <img src="imges/name.png"   />
+                    </div>
+                </div>
+
+                <div class="name-wrapper">
+                    <p class="username">小泥鳅爱吃猫</p>
+                    <p class="placetext">邀请您一起加入37°社区</p>
+                </div>
+                <div class="btn-wrapper">
+                        <button class="down-btn">免费下载</button>
+                    </div>
+        
+            </div>
+            
+        </div>
+    </div>
+
+</body>
+<style>
+</style>
+
+</html>
