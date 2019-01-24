@@ -1,2 +1,2 @@
 # hoseweb
-me
+host web
